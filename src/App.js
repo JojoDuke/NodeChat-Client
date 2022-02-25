@@ -10,7 +10,7 @@ import logo from './components/logo-img.png';
 
 
 
-const socket = io.connect("https://nodechat-jd.herokuapp.com/");
+const socket = io("https://nodechat-jd.herokuapp.com/");
 
 function App() {
   const [username, setUsername] = useState("");
