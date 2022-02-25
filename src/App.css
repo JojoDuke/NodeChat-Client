@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.nav-btns {
+  border-radius: 5px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0px 5px;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  padding: 5px 20px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 0.4s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+.black{
+  background-color: #000;
+}.black:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.white{
+  background-color: #fff;
+  border: 3px solid #000;
+  color: #000;
+}.white:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+.joinChat-div{
+  background-color: #fafafa;
+  border-radius: 10px;
+  text-align: center;
+  height: 450px;
+  width: 300px;
+  margin: 5% auto;
+  padding-top: 5%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+} .joinChat-div h3{
+  font-family: 'Nunito', sans-serif;
+}
+
+.joinChat-div input{
+  width: 210px;
+  height: 40px;
+  margin: 7px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.join-btn{
+  margin-top: 60%;
+}
+
+.window{
+  width: 1000px;
+  height: auto;
+  border: none;
+  margin: 4% auto;
+}
+
+.window p {
+  margin: 0;
+}
+
+.chat-footer{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.chat-footer input{
+  border-radius: 100px;
+  border: 3px solid #000;
+  padding: 10px 20px;
+  font-size: 1rem;
+  width: 90%;
+  margin-right: 15px;
+}
+
+
+.chat-footer button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #47bd38;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 50px;
+  height: 50px;
+}
+
+.chat-footer button:hover,
+.chat-footer button:focus {
+  background-color: #7df76d;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.chat-footer button:hover {
+  transform: translateY(-1px);
+}
+
+.chat-footer button:active {
+  background-color: #92ff83;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.message-container{
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.message-container::-webkit-scrollbar{
+  display: none;
+  border: none;
+}
+
+.chat-body{
+  height: 600px;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  background-color: #f4fff7;
+}
+
+.message-item{
+  height: auto;
+  padding: 10px;
+  display: flex;
+}
+
+.message-content{
+  width: auto;
+  height: auto;
+  min-height: 40px;
+  max-width: 300px;
+  background-color: #43a047;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+#sender {
+  justify-content: flex-start;
+}
+
+#sender .message-content {
+  justify-content: flex-start;
+  background-color: #f5f5f5;
+  color: #000;
+  border: 2px solid #cccccc;
+  border-radius: 100px 100px 100px 10px;
+  padding: 10px 30px;
+}
+
+#sender .message-meta {
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+#receiver {
+  justify-content: flex-end;
+}
+
+#receiver .message-content {
+  justify-content: flex-end;
+  background-color: #59c42f;
+  color: rgb(255, 255, 255);
+  border-radius: 100px 100px 10px 100px;
+  padding: 10px 30px;
+}
+
+#receiver .message-meta {
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+.message-meta #author {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.message-meta {
+  display: flex;
+  font-size: 11px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
